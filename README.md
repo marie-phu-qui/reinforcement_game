@@ -7,3 +7,8 @@ L'utilisateur a accès à un jeu customisé à sa propre expérience pour le 'fu
 ## Librairies :
 
 [GYM](https://gym.openai.com/)
+
+
+## Game Engine :
+
+[Unity - avec le micro game karting en base](https://learn.unity.com/project/karting-template)
