@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{F8EB514B-A32C-DB9D-FF26-8936170F3523}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Legacy/Player/PlayerControl.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Legacy/Player/PlayerControl.cs" Line="48" Column="56" />
+      <File FileName="Assets/Scripts/Legacy/Enemy/TurretControl.cs" Line="14" Column="36" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DROIDS for LEARNING" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="44f7163f-6734-4738-93d3-0a80e24781a0" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
