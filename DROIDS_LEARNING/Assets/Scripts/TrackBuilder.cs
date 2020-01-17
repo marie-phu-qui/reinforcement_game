@@ -15,12 +15,14 @@ public class TrackBuilder : MonoBehaviour
     public GameObject module02;         //  Reference to module prefab
     public GameObject module03;         //  Reference to module prefab 
     public GameObject module04;         //  Reference to module prefab
+    /*
     public GameObject module05;         //  Reference to module prefab
     public GameObject module06;         //  Reference to module prefab
     public GameObject module07;         //  Reference to module prefab
     public GameObject module08;         //  Reference to module prefab
     public GameObject module09;         //  Reference to module prefab
     public GameObject module10;         //  Reference to module prefab
+    */
 
     [Header("REFERENCES")]
     public GameObject UIObject;         //  Reference to the GameObject that contains the UIScript
@@ -74,7 +76,7 @@ public class TrackBuilder : MonoBehaviour
                     // Tell UIScript which track was selected
                     UIObject.gameObject.GetComponent<UIScript>().UpdateNextModText(3);
                 }
-
+                
                 if (Input.GetKeyDown(KeyCode.Alpha4))
                 {
                     // Set the Prefab
@@ -83,7 +85,7 @@ public class TrackBuilder : MonoBehaviour
                     // Tell UIScript which track was selected
                     UIObject.gameObject.GetComponent<UIScript>().UpdateNextModText(4);
                 }
-
+                /*
                 if (Input.GetKeyDown(KeyCode.Alpha5))
                 {
                     // Set the Prefab
@@ -137,7 +139,7 @@ public class TrackBuilder : MonoBehaviour
                     // Tell UIScript which track was selected
                     UIObject.gameObject.GetComponent<UIScript>().UpdateNextModText(10);
                 }
-
+                */
             }
 
             else
@@ -157,7 +159,7 @@ public class TrackBuilder : MonoBehaviour
             if (randomModeOn == true)
             {
                 // Choose a random number
-                randomNumber = Random.Range(1, 3);
+                randomNumber = Random.Range(1, 4);
             }
 
             // Testing
@@ -190,7 +192,7 @@ public class TrackBuilder : MonoBehaviour
                 // Tell UIScript which track was selected
                 UIObject.gameObject.GetComponent<UIScript>().UpdateNextModText(3);
             }
-
+            
             else if (randomNumber == 4)
             {
                 // Set the Prefab
@@ -199,7 +201,7 @@ public class TrackBuilder : MonoBehaviour
                 // Tell UIScript which track was selected
                 UIObject.gameObject.GetComponent<UIScript>().UpdateNextModText(4);
             }
-
+            /*
             else if (randomNumber == 5)
             {
                 // Set the Prefab
@@ -253,7 +255,7 @@ public class TrackBuilder : MonoBehaviour
                 // Tell UIScript which track was selected
                 UIObject.gameObject.GetComponent<UIScript>().UpdateNextModText(10);
             }
-
+            */
             // Place the next module (via the method below)
             PlaceNextModule();
         
