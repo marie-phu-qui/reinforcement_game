@@ -4358,6 +4358,49 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165314922}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1188922297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188922299}
+  - component: {fileID: 1188922298}
+  m_Layer: 0
+  m_Name: PlayerAcademy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1188922298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188922297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1561e146fb72ee747aca50a2cc55c28d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1188922299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188922297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1214078976
 GameObject:
   m_ObjectHideFlags: 0
@@ -4587,6 +4630,30 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 386655363842361504}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1292362199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292362198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    vectorObservationSize: 8
+    numStackedVectorObservations: 1
+    vectorActionSize: 02000000
+    vectorActionDescriptions: []
+    vectorActionSpaceType: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 1
+  m_BehaviorName: PlayerBrain
+  m_TeamID: 0
+  m_useChildSensors: 1
 --- !u!114 &1292362202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4596,15 +4663,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292362198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1e5eb7482f3a7a42870e21480411616, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bd288465338c0e4b85091accb080d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agentParameters:
     maxStep: 0
     resetOnDone: 1
     onDemandDecision: 0
-    numberOfActionsBetweenDecisions: 1
-  Target: {fileID: 0}
+    numberOfActionsBetweenDecisions: 10
 --- !u!1 &1307798706
 GameObject:
   m_ObjectHideFlags: 0
@@ -8087,6 +8153,11 @@ PrefabInstance:
     - target: {fileID: 4481862535522544590, guid: f2aa31684b0bc4c1fba4e34603481464,
         type: 3}
       propertyPath: manualInput
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481862535522544590, guid: f2aa31684b0bc4c1fba4e34603481464,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7969225621109629180, guid: f2aa31684b0bc4c1fba4e34603481464,

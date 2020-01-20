@@ -10,7 +10,6 @@ public class agent : Agent
     void Start()
     {
         rBody = GetComponent<Rigidbody>();
-        print(rBody);
     }
     public Transform Target;
     public override void AgentReset()
@@ -18,15 +17,15 @@ public class agent : Agent
         // If the player has collision with the right side walk 
         // go left
         print(this.transform.position.x);
-        if (this.transform.position.x < -6)
+        if (this.transform.position.x < -6f)
         {
-            print("choc à gauche");
+            Debug.Log("choc à gauche");
         }
         // If the player has collision with the left side walk 
         // go right
-        else if (this.transform.position.x > 6)
+        else if (this.transform.position.x > 6f)
         {
-            print("choc à droite");
-        }
+            Debug.Log("choc à droite");
+        } 
     }
 }
