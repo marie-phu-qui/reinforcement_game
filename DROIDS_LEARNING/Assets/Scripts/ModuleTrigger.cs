@@ -21,7 +21,6 @@ public class ModuleTrigger : MonoBehaviour
         UIObject = GameObject.FindWithTag("UIObject");
     }
 
-
     private void OnTriggerEnter(Collider other)
     {
         // If an object with the 'Player' tag enters the trigger zone..
@@ -36,6 +35,15 @@ public class ModuleTrigger : MonoBehaviour
             // Ask the TrackBuilder to determine [and then place] the next module
             trackBuilder.GetComponent<TrackBuilder>().SelectNextModule();
         }
+
+    }
+    private int collision = 0;
+    private void OnCollisionReset()
+    {
+        collision++;
+        // Testing
+        Debug.Log("Wall Trigger triggered" + collision);
+
 
     }
 
