@@ -7,7 +7,8 @@ public class ModuleTrigger : MonoBehaviour
 
     [Header("REFERENCES")]
     public GameObject UIObject;         //  Reference to the GameObject that contains the UIScript
-    public GameObject trackBuilder;     //  Reference to the GameObject that holds the trackBuilder script   
+    public GameObject trackBuilder;     //  Reference to the GameObject that holds the trackBuilder script
+
 
 
     private void Awake()
@@ -19,10 +20,13 @@ public class ModuleTrigger : MonoBehaviour
         // Find the trackBuilder gameObject by using its tag
         // Give UIObject a value
         UIObject = GameObject.FindWithTag("UIObject");
+
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
+       
         // If an object with the 'Player' tag enters the trigger zone..
         if (other.CompareTag("Player"))
         {

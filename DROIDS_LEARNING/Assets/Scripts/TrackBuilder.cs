@@ -8,6 +8,7 @@ public class TrackBuilder : MonoBehaviour
     public bool randomModeOn = true;    //  Whether or not to choose modules randomly
     public int randomNumber;            //  For storing random number
     public GameObject nextModule;       //  Chosen module
+    public GameObject lastModule;       //  Previous module
     public bool gameHasBegun = false;   //  The game has begun
 
     [Header("TRACK MODULES")]

@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.2850067, g: 0.37138987, b: 0.49620128, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -2333,7 +2333,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 10fc4df2da32a41aaa32d77bc913491c, type: 2}
+  sharedProfile: {fileID: 0}
 --- !u!4 &653260038
 Transform:
   m_ObjectHideFlags: 0
@@ -5076,38 +5076,6 @@ MonoBehaviour:
   Stack1: {fileID: 439394982}
   Stack2: {fileID: 584413083}
   Stack3: {fileID: 805871383}
---- !u!114 &1292362204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292362198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sensorName: RayPerceptionSensor
-  detectableTags:
-  - RightWall
-  - LeftWall
-  - MiddleStack
-  - LeftStack
-  - RightStack
-  raysPerDirection: 2
-  maxRayDegrees: 60
-  sphereCastRadius: 0.5
-  rayLength: 224
-  rayLayerMask:
-    serializedVersion: 2
-    m_Bits: 8983
-  observationStacks: 1
-  rayHitColor: {r: 1, g: 0, b: 0, a: 1}
-  rayMissColor: {r: 1, g: 1, b: 1, a: 1}
-  useWorldPositions: 1
-  startVerticalOffset: 0
-  endVerticalOffset: 0
 --- !u!1 &1307798706
 GameObject:
   m_ObjectHideFlags: 0
@@ -8112,6 +8080,7 @@ MonoBehaviour:
   randomModeOn: 1
   randomNumber: 0
   nextModule: {fileID: 0}
+  lastModule: {fileID: 996759063}
   gameHasBegun: 0
   module01: {fileID: 5105638583726966400, guid: 53867024813b9430ebc5e9c4f25b27e8,
     type: 3}
@@ -9035,8 +9004,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 1
-  m_Antialiasing: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
