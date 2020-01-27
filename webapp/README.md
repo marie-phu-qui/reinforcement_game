@@ -21,7 +21,7 @@ flask run
 
 Installer l'interface de commandes [AZURE CLI](https://docs.microsoft.com/fr-fr/cli/azure/install-azure-cli?view=azure-cli-latest).  
 
-* sous Windows : lancer un Powershell en administrateur et se connecter à son compte Azure (devrait nous rediriger vers la page credentials)   
+* sous Windows : lancer un Powershell en administrateur et se connecter à son compte Azure (devrait nous rediriger vers la page credentials)
 
 ```  
 az.cmd login  
@@ -29,7 +29,7 @@ az.cmd login
 
 ## Étape 3 : Deployer pour la première fois l'application  
 
-* En France (Paris) <location-name> = francecentral  
+* En France (Paris) <location-name> = francecentral. Nécessité d'être sous le répertoire "requirements.txt" (sous python) ou package.json, sever.js, index.js (node.js).
 
 ```
 az webapp up --sku F1 -n <app-name> -l <location-name>  
