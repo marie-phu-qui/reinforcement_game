@@ -1,5 +1,19 @@
 # Deploiment sur Azure   
 
+## Étape 0 : Ressources nécessaires
+
+* Création d'un ressource group
+
+
+
+* Création d'un storage account
+
+Sur le powershell avec [AZURE CLI](https://docs.microsoft.com/fr-fr/cli/azure/install-azure-cli?view=azure-cli-latest).  
+
+```
+az storage account create  --name <storageaccountname>   --resource-group <ressource_groupe_name>   --location francecentral   --sku Standard_RAGRS    --kind StorageV2
+```
+
 ## Étape 1 : Activer l'application localement  
 
 
@@ -32,7 +46,7 @@ az.cmd login
 * En France (Paris) <location-name> = francecentral. Nécessité d'être sous le répertoire "requirements.txt" (sous python) ou package.json, sever.js, index.js (node.js).
 
 ```
-az webapp up --sku F1 -n <app-name> -l <location-name>  
+az webapp up --sku F1 -n <app-name> -l <location-name>  -g <ressource-group-name> -p <appserviceplan-name>
 ```
 
 Cette commande crée un Ressource Group, un App Service Plan et déploie sur un lien du type http:// <app-name> .azurewebsites.net  
