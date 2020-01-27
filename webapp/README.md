@@ -4,9 +4,13 @@
 
 * Création d'un ressource group
 
+Exemple : Location : France(Paris) = francecentral  
+ 
+```
+az group create -l <location-name> -n <resource-group-name>
+```
 
-
-* Création d'un storage account
+* Création d'un storage account (possiblement non nécessaire)
 
 Sur le powershell avec [AZURE CLI](https://docs.microsoft.com/fr-fr/cli/azure/install-azure-cli?view=azure-cli-latest).  
 
