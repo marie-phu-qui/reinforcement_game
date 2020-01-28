@@ -7,7 +7,8 @@ public class ModuleTrigger : MonoBehaviour
 
     [Header("REFERENCES")]
     public GameObject UIObject;         //  Reference to the GameObject that contains the UIScript
-    public GameObject trackBuilder;     //  Reference to the GameObject that holds the trackBuilder script   
+    public GameObject trackBuilder;     //  Reference to the GameObject that holds the trackBuilder script
+
 
 
     private void Awake()
@@ -19,11 +20,13 @@ public class ModuleTrigger : MonoBehaviour
         // Find the trackBuilder gameObject by using its tag
         // Give UIObject a value
         UIObject = GameObject.FindWithTag("UIObject");
-    }
 
+
+    }
 
     private void OnTriggerEnter(Collider other)
     {
+       
         // If an object with the 'Player' tag enters the trigger zone..
         if (other.CompareTag("Player"))
         {
@@ -36,6 +39,15 @@ public class ModuleTrigger : MonoBehaviour
             // Ask the TrackBuilder to determine [and then place] the next module
             trackBuilder.GetComponent<TrackBuilder>().SelectNextModule();
         }
+
+    }
+    private int collision = 0;
+    private void OnCollisionReset()
+    {
+        collision++;
+        // Testing
+        Debug.Log("Wall Trigger triggered" + collision);
+
 
     }
 
