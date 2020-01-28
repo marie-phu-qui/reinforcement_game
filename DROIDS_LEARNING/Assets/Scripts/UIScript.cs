@@ -9,9 +9,11 @@ public class UIScript : MonoBehaviour
     public Text modsReachedText;
     public Text nextModText;
     public Text randomModeText;
+    public Text collisionsText;
 
     [Header("DEBUG")]
     public int modsReached = 0;
+    public int collisions = 0;
     public int nextMod;
     public bool randomModeOn = true;
 
@@ -21,6 +23,7 @@ public class UIScript : MonoBehaviour
         // Keep UI updated
         modsReachedText.text = "" + modsReached;
         nextModText.text = "" + nextMod;
+        collisionsText.text = "" + collisions;
 
         if (randomModeOn == true)
         {
@@ -36,7 +39,12 @@ public class UIScript : MonoBehaviour
 
     public void IncrementModuleCount()
     {
-        modsReached++; 
+        modsReached++;
+    }
+
+    public void IncrementCollisionCount()
+    {
+        collisions++;
     }
 
 

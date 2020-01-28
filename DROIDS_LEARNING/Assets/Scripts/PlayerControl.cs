@@ -13,7 +13,7 @@ public class PlayerControl : MonoBehaviour
     [Header("DEBUG")]
     public Text verticalInputText;
     public Text horizontalInputText;
-    public bool manualInput = false;
+    public bool manualInput = true;
 
     // PRIVATE VARIABLES
     Rigidbody rbody;

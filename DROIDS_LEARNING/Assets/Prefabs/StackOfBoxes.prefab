@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2575299948001147810}
+  - component: {fileID: 6823307864481737143}
+  - component: {fileID: 724508833968661652}
   m_Layer: 0
   m_Name: StackOfBoxes
   m_TagString: Untagged
@@ -46,6 +48,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6823307864481737143
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8418525039479672928}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1803567, y: 1.9402852, z: 4.120945}
+  m_Center: {x: 0.010003209, y: 1.0903294, z: -0.02000618}
+--- !u!114 &724508833968661652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8418525039479672928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ec457b9566f4773b80707696b1d837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIObject: {fileID: 0}
+  collisionCollider: {fileID: 0}
 --- !u!1001 &277324715838960631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53,11 +82,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -113,6 +137,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &1653600518492236166 stripped
@@ -128,11 +157,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -188,6 +212,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (6)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &2162326046624657032 stripped
@@ -203,11 +232,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -263,6 +287,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &251912373926402911 stripped
@@ -278,11 +307,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -338,6 +362,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (14)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &3930666607070268273 stripped
@@ -353,11 +382,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -413,6 +437,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &4521878339319316250 stripped
@@ -428,11 +457,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -488,6 +512,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (9)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &4281852235950435497 stripped
@@ -503,11 +532,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -563,6 +587,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (8)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &6478825594381279764 stripped
@@ -578,11 +607,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -638,6 +662,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (13)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &6376455275562757298 stripped
@@ -653,11 +682,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -713,6 +737,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (7)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &4844782028461544988 stripped
@@ -728,11 +757,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -788,6 +812,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &5576520669378748717 stripped
@@ -803,11 +832,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -863,6 +887,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (15)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &8332481566716690606 stripped
@@ -878,11 +907,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -938,6 +962,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (5)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &8221968243638011258 stripped
@@ -953,11 +982,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1013,6 +1037,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (12)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &9188248909705934878 stripped
@@ -1028,11 +1057,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1088,6 +1112,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (11)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &6969912348080072514 stripped
@@ -1103,11 +1132,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1163,6 +1187,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
 --- !u!4 &7132943057475955146 stripped
@@ -1178,11 +1207,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2575299948001147810}
     m_Modifications:
-    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
-        type: 3}
-      propertyPath: m_Name
-      value: CardBoardBox (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 1525459911333763697, guid: e346b77ef460b2349a8dacb57ceaabf0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1237,6 +1261,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2553783353349449826, guid: e346b77ef460b2349a8dacb57ceaabf0,
+        type: 3}
+      propertyPath: m_Name
+      value: CardBoardBox (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e346b77ef460b2349a8dacb57ceaabf0, type: 3}
