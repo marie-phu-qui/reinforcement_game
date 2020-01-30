@@ -1,6 +1,5 @@
 # Deploiment sur Azure   
 
-<<<<<<< HEAD
 ## Étape 0 : Ressources nécessaires
 
 * Création d'un ressource group
@@ -20,7 +19,7 @@ az storage account create  --name <storageaccountname>   --resource-group <resso
 ```
 
 =======
->>>>>>> parent of 5d407c39... add groupe ressource
+
 ## Étape 1 : Activer l'application localement  
 
 
@@ -53,7 +52,7 @@ az.cmd login
 * En France (Paris) <location-name> = francecentral. Nécessité d'être sous le répertoire "requirements.txt" (sous python) ou package.json, sever.js, index.js (node.js).
 
 ```
-az webapp up --sku F1 -n <app-name> -l <location-name>  
+az webapp up --sku F1 -n <app-name> -l <location-name> -p <plan-name>
 ```
 
 Cette commande crée un Ressource Group, un App Service Plan et déploie sur un lien du type http:// <app-name> .azurewebsites.net  
