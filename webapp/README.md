@@ -1,4 +1,4 @@
-# Deploiment sur Azure   
+# Deploiement sur Azure   
 
 ## Étape 0 : Ressources nécessaires
 
