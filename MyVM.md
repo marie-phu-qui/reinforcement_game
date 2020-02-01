@@ -10,10 +10,14 @@ Suivre les instructions  de cette page [web](https://github.com/Unity-Technologi
 La création de la clé peut se faire avec le shell Azure mais c'est mieux de le faire depuis le terminal (macOS) 
 pour générer la clé depuis notre ordi. Ainsi on peut se connecter et transférer directement nos dossier/fichiers 
 au serveur.
-3. Dans la partie où il faut créer l'executable de Linux, il faut cocher Server Build qui devrait avoir la même
-fonction que headless mode. Attention à envoyer tous les fichiers crées et pas seulement l'executable.
-4. Il faut mettre le dossier du jeu dans le sous-dossier ml-agents que tu as transféré à la VM.
-5. Quand tu executes cette commande
+3. Il faut installer python 3.7 sur la VM. Suivez la méthode 1
+de ce [lien](https://websiteforstudents.com/installing-the-latest-python-3-7-on-ubuntu-16-04-18-04/).
+4. Créer un VE avec python 3.7 sur la VM en suivant 
+ce [lien](https://github.com/Unity-Technologies/ml-agents/blob/latest_release/docs/Using-Virtual-Environment.md).
+5. Dans la partie où il faut créer l'executable de Linux, il faut cocher Server Build qui devrait avoir la même
+fonction que Headless mode. Attention à envoyer tous les fichiers crées et pas seulement l'executable.
+6. Il faut mettre le dossier du jeu dans le sous-dossier ml-agents que tu as transféré à la VM.
+7. Quand tu executes cette commande
 ```sh
 mlagents-learn <trainer_config> --env=<your_app> --run-id=<run_id> --train
 ```
