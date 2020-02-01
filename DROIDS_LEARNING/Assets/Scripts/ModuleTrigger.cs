@@ -8,6 +8,9 @@ public class ModuleTrigger : MonoBehaviour
     [Header("REFERENCES")]
     public GameObject UIObject;         //  Reference to the GameObject that contains the UIScript
     public GameObject trackBuilder;     //  Reference to the GameObject that holds the trackBuilder script
+    public GameObject currentModule;
+    public Transform currentTransform;
+    public Transform parentTransform;
 
 
 
@@ -17,7 +20,7 @@ public class ModuleTrigger : MonoBehaviour
         // Give UIObject a value
         trackBuilder = GameObject.FindWithTag("TrackBuilder");
 
-        // Find the trackBuilder gameObject by using its tag
+        // Find the UI gameObject by using its tag
         // Give UIObject a value
         UIObject = GameObject.FindWithTag("UIObject");
 
@@ -30,14 +33,15 @@ public class ModuleTrigger : MonoBehaviour
         // If an object with the 'Player' tag enters the trigger zone..
         if (other.CompareTag("Player"))
         {
-            // Testing
-            Debug.Log("Trigger triggered");
-
             // Increment the counter in UIScript
             UIObject.gameObject.GetComponent<UIScript>().IncrementModuleCount();
 
-            // Ask the TrackBuilder to determine [and then place] the next module
-            trackBuilder.GetComponent<TrackBuilder>().SelectNextModule();
+            // Give THIS module the CurrentModule tag (4 steps)
+            currentTransform = gameObject.transform;                                        //  Get the transform component of this trigger object
+            parentTransform = currentTransform.transform.parent;                            //  Get the transform of the parent of this trigger object
+            currentModule = parentTransform.transform.gameObject;                           //  Get the GameObject the trigger belongs to
+            trackBuilder.GetComponent<TrackBuilder>().SetCurrentModule(currentModule);      //  Set the newCurrentModule in Trackbuilder
+                                                                                            //  The Trackbuilder will then run the SelectNextModule method 
         }
 
     }
