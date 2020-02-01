@@ -4,7 +4,7 @@ Suivre les instructions  de cette page [web](https://github.com/Unity-Technologi
 
 ## Remarques
 
-1. La VM utilisée c'est celle qui est déjà pre-configuré (celle de data scientist).
+1. La VM utilisée c'est celle qui est déjà pre-configurée (celle de data scientist).
 2. J'ai choisi la connexion ssh. Il faut suivre ce 
 [tuto](https://docs.microsoft.com/fr-fr/azure/virtual-machines/linux/quick-create-portal).
 La création de la clé peut se faire avec le shell Azure mais c'est mieux de le faire depuis le terminal (macOS) 
