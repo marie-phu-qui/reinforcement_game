@@ -10,6 +10,7 @@
 
 ### Étape 2 : Lancer le training de l'agent
 
+* Activer l'environment conda UnityML  
 * Sur un terminal, depuis l'Asset ML-Agent (afin d'accéder au folder .config) lancer  
 ```
 mlagents-learn config/<notre-fichier-config>.yaml --run-id=<id-du-training> --train {--option: --env=<lien_vers_le_fichier_.app_permet_de_ne_pas_lancer_le_training_depuis_línterface_unity>  --load (si l'id a déjà été lancée, le neural network repartira de ses dernières performances)}
