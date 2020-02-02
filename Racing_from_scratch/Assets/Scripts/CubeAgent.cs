@@ -211,6 +211,7 @@ public class CubeAgent : Agent
         if (collision.gameObject.CompareTag("goal"))
         {
             SetReward(2f);
+            GameObject.Find("CubeAgent").SendMessage("Finish");
             Done();
         }
     }

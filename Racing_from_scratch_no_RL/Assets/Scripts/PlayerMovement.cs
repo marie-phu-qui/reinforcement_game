@@ -68,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("goal"))
         {
+            GameObject.Find("CubeAgent").SendMessage("Finish");
             PlayerReset();
         }
     }
