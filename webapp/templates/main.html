@@ -5,24 +5,29 @@
     <head>
         <title>{% block title %}{% endblock %}</title>
 
+        <link href="https://fonts.googleapis.com/css?family=Bevan|Press+Start+2P&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="../public/main.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 
     </head>
     <body>
-        <div id=header>
-            <h1><a href="/">MASSIVE TITLE</a></h1>
-
-            <button><a href="/">Présentation</a></button>
-            <button><a href="/challenge">Challenge</a></button>
-            <button><a href="/droid">Le jeu</a></button>
+        <div id=header class="container">
+            <div class="row justify-content-center">
+                <h1 class="col-4">
+                    <a href="/">DROID and BOXES</a>
+                </h1>
+            </div>
+            
+            <div class="row justify-content-center">
+                <button><a href="/">Présentation</a></button>
+                <button><a href="/challenge">Challenge</a></button>
+                <button><a href="/droid">Le jeu</a></button>    
+            </div>
         </div>
-        
-    {% block content %}
-    {% endblock %}
 
-    <p>
-        lalala
-    </p>
+        <div id="content" class="container">
+                {% block content %}
+                {% endblock %}
+        </div>
     </body>
 </html>
