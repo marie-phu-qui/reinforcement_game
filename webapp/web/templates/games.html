@@ -62,21 +62,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="gallery-grids">
 				<div class="gallery-grid">
 					<a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">
-						<img src="images/logo_droid.jpg" alt=" " class="img-responsive zoom-img" />
+						<img src="images/logo_droid.jpg" alt="droid game image" class="img-responsive zoom-img" />
 					</a>
+				</div>
+				<div class="gallery-grid">
 					<a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog2">
-						<img src="images/cube.jpg" alt=" " class="img-responsive zoom-img" />
+						<img src="images/cube.jpg" alt="cube game image" class="img-responsive zoom-img" />
 					</a>
 				</div>
 				<div class="gallery-grid">
 					<a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog3">
-						<img src="images/penguin.jpg" alt=" " class="img-responsive zoom-img" />
-					</a>
-					<a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog4">
-						<img src="images/robot_vert1.png" alt=" " class="img-responsive zoom-img" />
+						<img src="images/penguin.jpg" alt="pingouingame image" class="img-responsive zoom-img" />
 					</a>
 				</div>
-				<div class="clearfix"> </div>
+				<div class="gallery-grid">
+					<a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog4">
+						<img src="images/robot_vert1.png" alt="robot à venir" class="img-responsive zoom-img" />
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -141,36 +144,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="pop-up"> 
 	<div id="small-dialog2" class="mfp-hide book-form">
 		<div class="pop-up-content-agileits-w3layouts">
-			<div class="col-md-6">
-				<img src="images/cube.jpg" alt="cube game image" class="img-responsive zoom-img" onclick="turn(this)"/>
-				<iframe src="https://i.simmer.io/@marie_phuqui/rlracing" style="width:480px;height:300px;border:0"></iframe>
+			<div class="row">
+				<div class="col-md-6">
+					<img src="images/cube.jpg" alt="cube game image" class="img-responsive zoom-img" onclick="turn(this)"/>
+				</div>
+				<div class="col-md-6">
+					<h4>Cube Racing</h4>
+					<p>Attraper la capsule jaune tout en évitant les obstacles.</p>
+					<p class="agileits">Jeu de conduite. Utiliser les touches haut/bas/gauche/droite.</p>
+					<div class="span span1">
+						<p class="left">AGENT</p>
+						<p class="right">: Apprentissage global</p>
+						<video width="320" height="240" loop autoplay title="result from a training with final game">
+							<source src="{{ url_for('static', filename='images/hardBrainTimer.mp4') }}" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<div class="clearfix"></div>
+					</div>
+					<div class="span span2">
+						<p class="left">AGENT</p>
+						<p class="right">: Apprentissage séquentiel</p>
+						<video width="320" height="240" loop autoplay title="result from a progressive training">
+							<source src="{{ url_for('static', filename='images/empiricalBrainTimer.mp4') }}" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						<div class="clearfix"></div>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-6">
-				<h4>Cube Racing</h4>
-				<p>Attraper la capsule jaune tout en évitant les obstacles.</p>
-				<p class="agileits">Jeu de conduite.  Cicker le jeu pour commencer. Utiliser les touches haut/bas/gauche/droite.</p>
-				<div class="span span1">
-					<p class="left">AGENT</p>
-					<p class="right">: Apprentissage global</p>
-					<video width="320" height="240" loop autoplay title="result from a training with final game">
-						<source src="{{ url_for('static', filename='images/hardBrainTimer.mp4') }}" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-					<div class="clearfix"></div>
-				</div>
-				<div class="span span2">
-					<p class="left">AGENT</p>
-					<p class="right">: Apprentissage séquentiel</p>
-					<video width="320" height="240" loop autoplay title="result from a progressive training">
-						<source src="{{ url_for('static', filename='images/empiricalBrainTimer.mp4') }}" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-					<div class="clearfix"></div>
-				</div>
-				<div class="span span3">
-					<p class="left">REQUIRES</p>
-					<p class="right">: ML Agent [à venir]</p>
-					<div class="clearfix"></div>
+			<div class="row">
+				<div class="col align-self-center">
+					<p>Clicker le jeu pour commencer à jouer.</p>
+					<iframe src="https://i.simmer.io/@marie_phuqui/rlracing" style="width:960px;height:600px;border:0"></iframe>
 				</div>
 			</div>
 			<div class="clearfix"></div>
@@ -180,59 +185,63 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="pop-up"> 
 	<div id="small-dialog3" class="mfp-hide book-form">
 		<div class="pop-up-content-agileits-w3layouts">
-			<div class="col-md-6 w3ls-left">
-				<img src="images/g3big.jpg" alt=" " class="img-responsive zoom-img" />
+
+			<div class="row">
+				<div class="col-md-8 w3ls-left">
+					<img src="images/penguin.jpg" alt="penguin image" class="img-responsive zoom-img" />
+				</div>
+				<div class="col-md-4 w3ls-right">
+					<h4>Pingouin</h4>
+					<p>Attraper le poisson, nourrir son petit, recommencer. Timer.</p>
+					<div class="span span1">
+						<p class="left">AGENT</p>
+						<p class="right">: Apprentissage global</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="span span2">
+						<p class="left">AGENT</p>
+						<p class="right">: Apprentissage séquentiel</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="span span3">
+						<p class="left">REQUIRES</p>
+						<p class="right">: ML Agent [à venir]</p>
+						<div class="clearfix"></div>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-6 w3ls-right">
-				<h4>Game-3</h4>
-				<p>Duis sodales nibh vitae augue feugiat efficitur. Sed vel urna sollicitudin, interdum massa nec, sagittis massa. </p>
-				<p class="agileits">Etiam porttitor neque enim, sit amet mollis est sollicitudin sed.</p>
-				<div class="span span1">
-					<p class="left">NAME</p>
-					<p class="right">: Venenatis</p>
-					<div class="clearfix"></div>
-				</div>
-				<div class="span span2">
-					<p class="left">DEVELOPER</p>
-					<p class="right">: Stanley</p>
-					<div class="clearfix"></div>
-				</div>
-				<div class="span span3">
-					<p class="left">REQUIRES</p>
-					<p class="right">: 1GB Hard Disk Space</p>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
 		</div>
 	</div>
 </div>	
 <div class="pop-up"> 
 	<div id="small-dialog4" class="mfp-hide book-form">
 		<div class="pop-up-content-agileits-w3layouts">
-			<div class="col-md-6 w3ls-left">
-				<img src="images/g5.jpg" alt=" " class="img-responsive zoom-img" />
+
+			<div class="row">
+				<div class="col-md-8 w3ls-left">
+					<img src="images/robot_blue.png" alt="robot image" class="img-responsive zoom-img" />
+				</div>
+				<div class="col-md-4 w3ls-right">
+					<h4>À venir</h4>
+					<p>À venir.</p>
+					<div class="span span1">
+						<p class="left">AGENT</p>
+						<p class="right">: Apprentissage global</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="span span2">
+						<p class="left">AGENT</p>
+						<p class="right">: Apprentissage séquentiel</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="span span3">
+						<p class="left">REQUIRES</p>
+						<p class="right">: ML Agent [à venir]</p>
+						<div class="clearfix"></div>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-6 w3ls-right">
-				<h4>Game-4</h4>
-				<p>Duis sodales nibh vitae augue feugiat efficitur. Sed vel urna sollicitudin, interdum massa nec, sagittis massa. </p>
-				<p class="agileits">Etiam porttitor neque enim, sit amet mollis est sollicitudin sed.</p>
-				<div class="span span1">
-					<p class="left">NAME</p>
-					<p class="right">: Interdum</p>
-					<div class="clearfix"></div>
-				</div>
-				<div class="span span2">
-					<p class="left">DEVELOPER</p>
-					<p class="right">: Spielberg</p>
-					<div class="clearfix"></div>
-				</div>
-				<div class="span span3">
-					<p class="left">REQUIRES</p>
-					<p class="right">: 3GB Hard Disk Space</p>
-					<div class="clearfix"></div>
-				</div>
-			</div>
+
 			<div class="clearfix"></div>
 		</div>
 	</div>
