@@ -17,9 +17,20 @@
 
     <div id="content-text" class="row justify-content-center">
 
+        <video width="320" height="240" autoplay title="result from a training with final game">
+            <source src={{ url_for('static', filename="hardBrainTimer.mp4") }} type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <video width="320" height="240" autoplay title="result from a progressive training">
+            <source src={{ url_for('static', filename="empiricalBrainTimer.mp4") }} type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
         <p class="col-8">
             lalala
         </p>
+
     </div>
 
 {% endblock %}
