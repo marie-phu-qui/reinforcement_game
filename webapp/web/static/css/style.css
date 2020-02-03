@@ -57,6 +57,11 @@ a:focus, a:hover {
 img {
 	width: 100%;
 }
+
+iframe{
+	margin:auto;
+	padding:0;
+}
 /*-- //Reset Code --*/
 
 /*-- Banner --*/
@@ -148,7 +153,10 @@ img {
 /*-- //Link-Hover-Effect --*/
 /*-- //Navbar --*/
 
-
+.navbar-header h1 {
+	margin-top:7px;
+	font-size: 35px;
+}
 
 /*-- Banner-Slider --*/
 .slider {
@@ -296,8 +304,42 @@ padding: 70px 0 165px 0;
 	top: 15% !important;
 	display:none;
 	}
-/*--//flexisel--*/
-/*--//trend--*/
+
+/*--//solution--*/
+.view-solution{
+	overflow: hidden;
+    position: relative;
+	margin-top:2em;
+	margin-left:5em;
+	width:25%;
+}
+
+.view-solution .mask, .view-solution .content {
+	width: 90%;
+    position: absolute;
+    overflow: hidden;
+    padding: 1.5em 0;
+}
+.view-solution img {
+   display: block;
+   position: relative;
+}
+.view-solution h4 {
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.view-solution p {
+   font-size: 1em;
+   position: relative;
+   color: #fff !important;
+   padding: 0.5em 0;
+   text-align: center;
+   margin:0;
+}
 
 /*--new games--*/
 
@@ -336,7 +378,7 @@ padding: 70px 0 165px 0;
    margin:0;
 }
 .view-eighth .mask {
-   background-color:rgba(0, 0, 0, 0.67);
+   background-color:rgba(0, 0, 0, 0.445);
    top: -200px;
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=0);
@@ -1358,6 +1400,12 @@ color:rgb(2, 24, 136) !important;
 /*-- //Contact-Page-Styling --*/
 
 /*-- single --*/
+#small-dialog, #small-dialog2, #small-dialog3, #small-dialog4, #small-dialog5, #small-dialog6, #small-dialog7, #small-dialog8 {
+	margin-top: 90px;
+	padding: 90px 20px;
+	max-width: 80%;
+}
+
 .agileits_breadcrumbs {
     padding: 1em 0;
    background: #dfdc00;
@@ -1605,6 +1653,14 @@ color:rgb(2, 24, 136) !important;
 
 /*-- responsive--*/
 @media screen and (max-width: 1440px){
+	.navbar-header h1 {
+		margin-top:7px;
+		font-size: 35px;
+	}
+	#small-dialog, #small-dialog2, #small-dialog3, #small-dialog4, #small-dialog5, #small-dialog6, #small-dialog7, #small-dialog8 {
+		padding: 40px 20px;
+		max-width: 85%;
+	}
 	.pop-up-content-agileits-w3layouts h4 {
 		margin-bottom: 15px;
 	}
@@ -1628,8 +1684,13 @@ color:rgb(2, 24, 136) !important;
 	}
 }
 @media screen and (max-width: 1366px){
+	.navbar-header h1 {
+		margin-top:7px;
+		font-size: 35px;
+	}
 	#small-dialog, #small-dialog2, #small-dialog3, #small-dialog4, #small-dialog5, #small-dialog6, #small-dialog7, #small-dialog8 {
 		padding: 40px 20px;
+		max-width: 85%;
 	}
 	.collection-grid {
 		padding: 0;
@@ -1647,8 +1708,12 @@ color:rgb(2, 24, 136) !important;
 	}
 }
 @media screen and (max-width: 1280px){
+	.navbar-header h1 {
+		margin-top:7px;
+		font-size: 35px;
+	}
 	#small-dialog, #small-dialog2, #small-dialog3, #small-dialog4, #small-dialog5, #small-dialog6, #small-dialog7, #small-dialog8 {
-		max-width: 55%
+		max-width: 85%
 	}
 	.collection-grid {
 		padding: 0;
@@ -1666,6 +1731,10 @@ color:rgb(2, 24, 136) !important;
 	}
 }
 @media screen and (max-width: 1080px){
+	.navbar-header h1 {
+		margin-top:7px;
+		font-size: 35px;
+	}
 	.view .mask, .view .content {
 		width: 87%;
 		padding: 5.5em 0;
@@ -1675,7 +1744,7 @@ color:rgb(2, 24, 136) !important;
 		right:0;
 	}
 	#small-dialog, #small-dialog2, #small-dialog3, #small-dialog4, #small-dialog5, #small-dialog6, #small-dialog7, #small-dialog8 {
-		max-width: 70%
+		max-width: 85%
 	}
 
 	.about-grid-left-agileits-w3layouts ul li {
@@ -1733,6 +1802,10 @@ color:rgb(2, 24, 136) !important;
 @media screen and (max-width: 1024px){
 	.events-text-w3-agile p {
 		font-size: 23px;
+	}
+	.navbar-header h1 {
+		margin-top:7px;
+		font-size: 35px;
 	}
 }
 @media screen and (max-width: 991px){
@@ -1804,7 +1877,7 @@ color:rgb(2, 24, 136) !important;
 		float:left;
 	}
 	#small-dialog, #small-dialog2, #small-dialog3, #small-dialog4, #small-dialog5, #small-dialog6, #small-dialog7, #small-dialog8 {
-		max-width: 72%;
+		max-width: 85%;
 	}
 	.about-grid-left-agileits-w3layouts,.about-grid-right-w3-agile {
 		width: 50%;
@@ -1962,7 +2035,7 @@ color:rgb(2, 24, 136) !important;
 }
 @media screen and (max-width: 900px){
 	#small-dialog, #small-dialog2, #small-dialog3, #small-dialog4, #small-dialog5, #small-dialog6, #small-dialog7, #small-dialog8 {
-		max-width: 80%;
+		max-width: 85%;
 	}
 	.events-text-w3-agile {
 		padding: 20px 0px 0px 20px;
