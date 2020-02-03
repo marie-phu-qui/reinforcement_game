@@ -795,11 +795,12 @@ figure.effect-zoe p.description {
 	position: absolute;
     bottom: 8em;
     padding: 2em;
-    color: #fff;
+    color: #0c1e81;
     text-transform: none;
-    font-size: .8em;
+	font-size: .8em;
+	font-weight: 700;
     line-height: 1.8em;
-    background: rgba(53, 53, 53, 0.25);
+    background: rgb(194, 194, 194, 0.25);
     opacity: 0;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
