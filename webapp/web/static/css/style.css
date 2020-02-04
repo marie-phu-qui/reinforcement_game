@@ -1089,7 +1089,8 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     background-color: #F7F7F7;
 }
 .gallery-grids {
-    margin: 3em 0 0;
+	/* margin: 3em 0 0; */
+	margin: auto;
 }
 .gallery-grid{
 	float:left;
