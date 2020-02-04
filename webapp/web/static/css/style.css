@@ -1403,6 +1403,7 @@ color:rgb(2, 24, 136) !important;
 
 /*-- single --*/
 #small-dialog, #small-dialog2, #small-dialog3, #small-dialog4, #small-dialog5, #small-dialog6, #small-dialog7, #small-dialog8 {
+	background-color: #e91e31;
 	margin-top: 90px;
 	padding: 90px 20px;
 	max-width: 80%;

@@ -144,32 +144,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="pop-up"> 
 	<div id="small-dialog2" class="mfp-hide book-form">
 		<div class="pop-up-content-agileits-w3layouts">
+
 			<div class="row">
-				<div class="col-md-6">
-					<img src="images/cube.jpg" alt="cube game image" class="img-responsive zoom-img" onclick="turn(this)"/>
-				</div>
-				<div class="col-md-6">
+				<div class="col">
 					<h4>Cube Racing</h4>
 					<p>Attraper la capsule jaune tout en évitant les obstacles.</p>
 					<p class="agileits">Jeu de conduite. Utiliser les touches haut/bas/gauche/droite.</p>
-					<div class="span span1">
-						<p class="left">AGENT</p>
-						<p class="right">: Apprentissage global</p>
-						<video width="320" height="240" autoplay title="result from a training with final game">
-							<source src="{{ url_for('static', filename='images/hardBrainTimer.mp4') }}" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-						<div class="clearfix"></div>
-					</div>
-					<div class="span span2">
-						<p class="left">AGENT</p>
-						<p class="right">: Apprentissage séquentiel</p>
-						<video width="320" height="240" autoplay title="result from a progressive training">
-							<source src="{{ url_for('static', filename='images/empiricalBrainTimer.mp4') }}" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-						<div class="clearfix"></div>
-					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="row">
+				<div class="span span1 col-md-6">
+					<p class="left">AGENT</p>
+					<p class="right">: Apprentissage global</p>
+					<video width="320" height="240" controls loop title="result from a training with final game">
+						<source src="{{ url_for('static', filename='images/hardBrainTimer.mp4') }}" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<div class="clearfix"></div>
+				</div>
+				<div class="span span1 col-md-6">
+					<p class="left">AGENT</p>
+					<p class="right">: Apprentissage séquentiel</p>
+					<video width="320" height="240" controls loop title="result from a progressive training">
+						<source src="{{ url_for('static', filename='images/empiricalBrainTimer.mp4') }}" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 			<div class="row">
