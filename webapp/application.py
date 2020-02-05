@@ -10,7 +10,6 @@ def test():
 def intro():
     return render_template('intro.html')
 
-
 @app.route("/challenge")
 def game():
     return render_template('game.html')

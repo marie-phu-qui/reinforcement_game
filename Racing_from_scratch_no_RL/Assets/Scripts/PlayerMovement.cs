@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    /*
     // INITIAL MOVEMENT ACTION
     //movement speed in units per second
     private float movementSpeed = 10f;
@@ -22,8 +22,8 @@ public class PlayerMovement : MonoBehaviour
         y += Time.deltaTime * horizontalInput * 200f;
         transform.rotation = Quaternion.Euler(0, y, 0);
     }
-
-    /*
+    */
+    
     // new movement action
     private Rigidbody rb;
 
@@ -57,12 +57,14 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(dirToGo * 2f, ForceMode.VelocityChange);
         }
     }
-    */
+    
 
     void PlayerReset()
     {
         //whenever done()
         transform.position = new Vector3(0, 0.5f, -4);
+        transform.rotation = Quaternion.Euler(new Vector3(0f, Random.Range(0, 360)));
+
     }
     void OnCollisionEnter(Collision collision)
     {
